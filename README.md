@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/lavadax/MS1-Sheets-Dojo">
-    <img src="assets/images/logo.png" alt="Logo" width="80" height="80">
+    <img src="assets/images/logo.png" alt="Logo" width="200" height="200">
   </a>
 
   ### Sheets Dojo
