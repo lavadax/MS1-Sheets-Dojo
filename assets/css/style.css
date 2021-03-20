@@ -1,0 +1,94 @@
+/* General styling */
+
+body {
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 100%;
+}
+
+/* Header */
+
+header {
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    width: 100%;
+    float: left;
+    border-bottom: 5px solid #CD1717;
+    background-color: #000;
+}
+
+/* logo */
+
+#logo-container {
+    position:absolute; 
+    left: 10px;
+    top:0; 
+    padding:0;
+    margin:0;
+}
+
+#logo {
+    height: 100px;
+    width: auto;
+}
+
+/* top nav bar */
+
+.nav-top-container {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    right: 10px;
+}
+
+.nav-top {
+    float: right;
+    position: absolute;
+    right: -50px;
+}
+
+.nav-top li {
+    display: inline;
+    float:left;
+    width:100px;
+    height:100px;
+    font-weight:bold;
+    position:relative;
+    bottom:-50px;
+}
+
+.nav-top li a {
+    display: block;
+    width:80px;
+    height:60px;
+    text-align: center;
+    text-decoration: none;
+    color:#fff;
+    border: 2px solid #CF1717;
+    padding: 15px 0;
+    border-radius:7px;
+    transform: translate(-50%, -50%);
+}
+
+.nav-top li a:hover {
+    color:#000;
+    background-color:#fff;
+    border-color:#CF1717;
+    text-decoration:none;
+    transition: all 0.2s ease-in-out;
+}
+
+/* responsive elements */
+
+@media screen and (max-width: 767px) {
+    .nav-top li {
+    }
+
+    .nav-top li a{
+        width: 65px;
+        height: 50px;
+        padding: 10px 0;
+        }
+}
