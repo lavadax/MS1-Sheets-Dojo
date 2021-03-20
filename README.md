@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/lavadax/MS1-Sheets-Dojo">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="assets/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   ### Sheets Dojo
@@ -40,7 +40,12 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li>
+        <a href="#roadmap">Roadmap</a>
+        <ul>
+            <li><a href="#open-issues">Open Issues</a></li>
+            <li><a href="#past-issues">Past issues</a></li>
+            </ul></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -85,8 +90,11 @@ Use this space to show useful examples of how a project can be used. Additional 
 <!-- ROADMAP -->
 ## Roadmap
 
+### Open Issues
+
 See the [open issues](https://github.com/lavadax/MS1-Sheets-Dojo/issues) for a list of proposed features (and known issues).
 
+### Past issues
 
 
 <!-- CONTRIBUTING -->
