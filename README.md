@@ -97,6 +97,7 @@ See the [open issues](https://github.com/lavadax/MS1-Sheets-Dojo/issues) for a l
 ### Past issues
 
 Adding "/" in readme headers stopped table of contents from redirecting correctly. Had to remove all symbols to ensure functionality.
+Project started on different repository, but after several days of testing, making edits to the master branch directly proved to be too risky. New repository was created as a safety precaution.
 
 <!-- CONTRIBUTING -->
 ## Contributing
