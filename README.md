@@ -133,3 +133,4 @@ Project Link: [https://github.com/lavadax/MS1-Sheets-Dojo](https://github.com/la
 ## Acknowledgements
 
 * [https://github.com/othneildrew](https://github.com/othneildrew/Best-README-Template) for providing the readme template.
+* [https://www.w3schools.com/](w3schools) for a refresher on a lot of styling rules, including but not limited to: vertical and horizontal centering of text, usage of last-child css selector in nav bar, active status of nav element, etc.
