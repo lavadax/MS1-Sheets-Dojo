@@ -1,0 +1,161 @@
+/* General styling */
+
+body {
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 100%;
+}
+
+/* Header */
+
+header {
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    width: 100%;
+    float: left;
+    border-bottom: 5px solid #CD1717;
+    background-color: #000;
+}
+
+/* logo */
+
+#logo-container {
+    position:absolute; 
+    left: 10px;
+    top:0; 
+    padding:0;
+    margin:0;
+}
+
+#logo {
+    height: 100px;
+    width: auto;
+}
+
+/* top nav bar */
+
+.nav-top-container {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    right: 10px;
+}
+
+.nav-top {
+    list-style-type: none;
+    float: right;
+    position: absolute;
+    right: -50px;
+}
+
+.nav-top li {
+    float:left;
+    width:100px;
+    height:100px;
+    font-weight:bold;
+    position:relative;
+    bottom:-50px;
+}
+
+.nav-top li a {
+    display: block;
+    width:80px;
+    height:60px;
+    text-align: center;
+    text-decoration: none;
+    color:#fff;
+    border: 2px solid #CF1717;
+    padding: 15px 0;
+    border-radius:7px;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in-out;
+}
+.nav-top li:last-child {
+        margin-right: 20px;
+}
+
+.nav-top li a:hover {
+    color:#000;
+    background-color:#fff;
+    border-color:#CF1717;
+}
+
+.nav-top li .active {
+    color: #000;
+    background-color: #CF1717;
+    border-color: #fff;
+}
+
+/* responsive elements */
+
+@media screen and (max-width: 767.8px) {
+    .nav-top li {
+        width: 85px;
+    }
+
+    .nav-top li a {
+        width: 70px;
+        height: 52.5px;
+        padding: 12px 0;
+        margin: 0;
+        font-size: 15px;
+        }
+
+    .nav-top li:last-child {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 575.8px) {
+    .nav-top li {
+        width: 78px;
+    }
+
+    .nav-top li a {
+        width: 65px;
+        height: 48.75px;
+        padding: 12px 0;
+        margin: 0;
+        font-size: 14px;
+        }
+
+    .nav-top li:last-child {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .nav-top li {
+        width: 58px;
+    }
+
+    .nav-top li a {
+        width: 50px;
+        height: 37.5px;
+        font-size: 10px;
+        padding: 10px 0;
+    }
+
+    .nav-top li:last-child {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .nav-top li {
+        width: 48px;
+    }
+
+    .nav-top li a {
+        width: 45px;
+        height: 33.75px;
+        font-size: 9px;
+        padding: 9px 0;
+    }
+
+    .nav-top li:last-child {
+        margin-right: 18px;
+    }
+}

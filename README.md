@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/lavadax/MS1-Sheets-Dojo">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="assets/images/logo.png" alt="Logo" width="200" height="200">
   </a>
 
   ### Sheets Dojo
@@ -40,7 +40,12 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li>
+        <a href="#roadmap">Roadmap</a>
+        <ul>
+            <li><a href="#open-issues">Open Issues</a></li>
+            <li><a href="#past-issues">Past issues</a></li>
+            </ul></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -85,9 +90,15 @@ Use this space to show useful examples of how a project can be used. Additional 
 <!-- ROADMAP -->
 ## Roadmap
 
+### Open Issues
+
 See the [open issues](https://github.com/lavadax/MS1-Sheets-Dojo/issues) for a list of proposed features (and known issues).
 
+### Past issues
 
+Top nav bar spacing would overlap on extra small screen sizes, requiring a modified spacing solution by form of media query to ensure proper functionality down to screen widths of 280px.
+Adding "/" in readme headers stopped table of contents from redirecting correctly. Had to remove all symbols to ensure functionality.
+Project started on different repository, but after several days of testing, making edits to the master branch directly proved to be too risky. New repository was created as a safety precaution.
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -122,3 +133,4 @@ Project Link: [https://github.com/lavadax/MS1-Sheets-Dojo](https://github.com/la
 ## Acknowledgements
 
 * [https://github.com/othneildrew](https://github.com/othneildrew/Best-README-Template) for providing the readme template.
+* [https://www.w3schools.com/](w3schools) for a refresher on a lot of styling rules, including but not limited to: vertical and horizontal centering of text, usage of last-child css selector in nav bar, active status of nav element, etc.
