@@ -90,6 +90,12 @@ header {
     border-color: #fff;
 }
 
+/* main body section */
+
+.main-content {
+    padding: 0 10%;
+}
+
 /* footer */
 
 footer {
