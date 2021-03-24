@@ -7,6 +7,10 @@ body {
     width: 100%;
 }
 
+.row {
+    margin: 0;
+}
+
 /* Header */
 
 header {
@@ -47,7 +51,8 @@ header {
     list-style-type: none;
     float: right;
     position: absolute;
-    right: -50px;
+    right: 0;
+    padding: 0;
 }
 
 .nav-top li {
@@ -72,9 +77,6 @@ header {
     transform: translate(-50%, -50%);
     transition: all 0.2s ease-in-out;
 }
-.nav-top li:last-child {
-        margin-right: 20px;
-}
 
 .nav-top li a:hover {
     color:#000;
@@ -88,6 +90,53 @@ header {
     border-color: #fff;
 }
 
+/* main body section */
+
+.main-content {
+    padding: 130px 10%;
+}
+
+/* footer */
+
+footer {
+    position:absolute;
+    bottom:0;
+    padding: 0;
+    margin: 0;
+    height: 85px;
+    width:100%;
+    float: left;
+    border-top: 5px solid #CD1717;
+    background-color: #000;
+    color:#fff;
+}
+
+footer .container {
+    height:80px;
+    padding:0 0 0 10px;
+}
+
+footer p {
+    padding:10px 0;
+}
+
+.footer-row {
+    height:80px;
+    display:flex;
+}
+
+.footer-contact {
+    text-align: center;
+}
+
+.socials {
+    position:absolute;
+    right:0.5%;
+    font-size: 1.5em;
+    text-align: right;
+
+}
+
 /* responsive elements */
 
 @media screen and (max-width: 767.8px) {
@@ -98,13 +147,13 @@ header {
     .nav-top li a {
         width: 70px;
         height: 52.5px;
-        padding: 12px 0;
+        padding: 13px 0;
         margin: 0;
         font-size: 15px;
-        }
+    }
 
-    .nav-top li:last-child {
-        margin-right: 10px;
+    .footer-row div p {
+        font-size: 15px;
     }
 }
 
@@ -119,14 +168,14 @@ header {
         padding: 12px 0;
         margin: 0;
         font-size: 14px;
-        }
-
-    .nav-top li:last-child {
-        margin-right: 10px;
+    }
+    
+    .footer-row div p {
+        font-size: 14px;
     }
 }
 
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 450px) {
     .nav-top li {
         width: 58px;
     }
@@ -138,12 +187,16 @@ header {
         padding: 10px 0;
     }
 
-    .nav-top li:last-child {
-        margin-right: 15px;
+    .footer-row div p {
+        font-size: 10px;
+    }
+
+    .fab {
+        font-size: 0.7em;
     }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 340px) {
     .nav-top li {
         width: 48px;
     }
@@ -156,6 +209,14 @@ header {
     }
 
     .nav-top li:last-child {
-        margin-right: 18px;
+        margin-right: -18px;
+    }
+
+    .footer-row div p {
+        font-size: 9px;
+    }
+
+    .fab {
+        font-size: 0.6em;
     }
 }
