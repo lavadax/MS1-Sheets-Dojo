@@ -96,6 +96,7 @@ See the [open issues](https://github.com/lavadax/MS1-Sheets-Dojo/issues) for a l
 
 ### Past issues
 
+[Width rules for all footer sections conflicted with the built-in bootstrap breakpoints, causing the center section to get pushed down on the screen.](https://github.com/lavadax/MS1-Sheets-Dojo/issues/5)
 The default negative margin of Bootstrap rows caused white space on the bottom and right of the page on screen widths of 575 pixels and below.
 Top nav bar spacing would overlap on extra small screen sizes, requiring a modified spacing solution by form of media query to ensure proper functionality down to screen widths of 280px.
 Adding "/" in readme headers stopped table of contents from redirecting correctly. Had to remove all symbols to ensure functionality.
