@@ -1,6 +1,7 @@
 /* General styling */
 
 body {
+    font-family: Helvetica, Garamond, Arial, Verdana;
     padding: 0;
     margin: 0;
     float: left;
@@ -45,6 +46,8 @@ header {
     margin: 0;
     padding: 0;
     right: 10px;
+    top: 0;
+    height: 100px;
 }
 
 .nav-top {
@@ -128,9 +131,14 @@ footer p {
     display:flex;
 }
 
+.copyright {
+    padding-top: 19px;
+}
+
 .footer-contact {
     text-align: center;
     max-width: 60vw;
+    padding-top: 8px;
 }
 
 .socials {
@@ -138,7 +146,7 @@ footer p {
     right:0.5%;
     font-size: 1.5em;
     text-align: right;
-
+    padding-top: 22px;
 }
 
 .footer-row .col-3 {
