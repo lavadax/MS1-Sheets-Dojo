@@ -1,6 +1,7 @@
 /* General styling */
 
 body {
+    font-family: Helvetica, Garamond, Arial, Verdana;
     padding: 0;
     margin: 0;
     float: left;
@@ -35,7 +36,7 @@ header {
 
 #logo {
     height: 100px;
-    width: auto;
+    width: 100px;
 }
 
 /* top nav bar */
@@ -45,6 +46,8 @@ header {
     margin: 0;
     padding: 0;
     right: 10px;
+    top: 0;
+    height: 100px;
 }
 
 .nav-top {
@@ -53,6 +56,7 @@ header {
     position: absolute;
     right: 0;
     padding: 0;
+    max-width: 100%;
 }
 
 .nav-top li {
@@ -61,7 +65,7 @@ header {
     height:100px;
     font-weight:bold;
     position:relative;
-    bottom:-50px;
+    bottom:0;
 }
 
 .nav-top li a {
@@ -73,8 +77,9 @@ header {
     color:#fff;
     border: 2px solid #CF1717;
     padding: 15px 0;
+    margin-top: calc((100% - 60px)/2); /* 50% of header height - height of anchor */
+    margin-bottom: calc((100% - 60px)/2); /* 50% of header height - height of anchor */
     border-radius:7px;
-    transform: translate(-50%, -50%);
     transition: all 0.2s ease-in-out;
 }
 
@@ -93,14 +98,15 @@ header {
 /* main body section */
 
 .main-content {
-    padding: 130px 10%;
+    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
+    padding: 30px 10%;
+    margin-top: 100px;
 }
 
 /* footer */
 
 footer {
-    position:absolute;
-    bottom:0;
+    
     padding: 0;
     margin: 0;
     height: 85px;
@@ -113,7 +119,9 @@ footer {
 
 footer .container {
     height:80px;
+    max-width: 100%;
     padding:0 0 0 10px;
+    margin: 0;
 }
 
 footer p {
@@ -125,8 +133,18 @@ footer p {
     display:flex;
 }
 
+.footer-row div {
+    max-height: 100%;
+}
+
+.copyright {
+    padding-top: 19px;
+}
+
 .footer-contact {
     text-align: center;
+    max-width: 60vw;
+    padding-top: 8px;
 }
 
 .socials {
@@ -134,7 +152,11 @@ footer p {
     right:0.5%;
     font-size: 1.5em;
     text-align: right;
+    padding-top: 22px;
+}
 
+.footer-row .col-3 {
+    max-width: 20vw;
 }
 
 /* responsive elements */
@@ -148,12 +170,23 @@ footer p {
         width: 70px;
         height: 52.5px;
         padding: 13px 0;
-        margin: 0;
+        margin-top: calc((100px - 52.5px)/2); /* 50% of header height - height of anchor */
+        margin-bottom: calc((100px - 52.5px)/2); /* 50% of header height - height of anchor */
         font-size: 15px;
     }
 
     .footer-row div p {
         font-size: 15px;
+    }
+
+    .fab {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 697px) { /* copyright text takes up 2 lines at this point, causing padding to overflow */
+    .copyright {
+        padding-top: 10px;
     }
 }
 
@@ -166,12 +199,17 @@ footer p {
         width: 65px;
         height: 48.75px;
         padding: 12px 0;
-        margin: 0;
+        margin-top: calc((100px - 48.75px)/2); /* 50% of header height - height of anchor */
+        margin-bottom: calc((100px - 48.75px)/2); /* 50% of header height - height of anchor */
         font-size: 14px;
     }
     
     .footer-row div p {
         font-size: 14px;
+    }
+
+    .fab {
+        font-size: 0.8em;
     }
 }
 
@@ -185,6 +223,8 @@ footer p {
         height: 37.5px;
         font-size: 10px;
         padding: 10px 0;
+        margin-top: calc((100px - 37.5px)/2); /* 50% of header height - height of anchor */
+        margin-bottom: calc((100px - 37.5px)/2); /* 50% of header height - height of anchor */
     }
 
     .footer-row div p {
@@ -197,6 +237,10 @@ footer p {
 }
 
 @media screen and (max-width: 340px) {
+    .nav-top {
+        width: 150px;
+    }
+    
     .nav-top li {
         width: 48px;
     }
@@ -206,6 +250,9 @@ footer p {
         height: 33.75px;
         font-size: 9px;
         padding: 9px 0;
+        margin-top: calc((100px - 33.75px)/2); /* 50% of header height - height of anchor */
+        margin-bottom: calc((100px - 33.75px)/2); /* 50% of header height - height of anchor */
+
     }
 
     .nav-top li:last-child {
