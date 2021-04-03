@@ -99,12 +99,16 @@ header {
 
 .main-content {
     min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
-    padding: 30px 10%;
+    padding: calc((100vh - 560px)/2) 10%;
     margin-top: 100px;
 }
 
 .main-content p {
     margin-bottom: 0.3rem;
+}
+
+.main-content p, .main-content h1, .main-content h3 {
+    text-align: center;
 }
 
 .text-block p:first-child, .text-block p:last-child {
@@ -137,7 +141,6 @@ header {
 /* footer */
 
 footer {
-    
     padding: 0;
     margin: 0;
     height: 85px;
