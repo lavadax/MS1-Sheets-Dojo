@@ -103,10 +103,13 @@ header {
     margin-top: 100px;
 }
 
-#faq-ref {
-    display: none; /* hidden as currently there's no FAQ */
+.main-content p {
+    margin-bottom: 0.3rem;
 }
 
+.text-block p:first-child, .text-block p:last-child {
+    margin-bottom: 1rem;
+}
 /* contact form */
 
 .contact-form {
