@@ -108,7 +108,7 @@ header {
 
 .contact-content {
     min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
-    padding: calc((100vh - 700px)/2) 10%;
+    padding: calc((100vh - 720px)/2) 10%;
 }
 
 .main-content p, .main-content form {
