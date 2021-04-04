@@ -154,10 +154,6 @@ header {
     min-height: 30px;
 }
 
-#other-hidden {
-    padding: 0;
-}
-
 .buttons {
     margin-top: 20px;
     display: flex;
