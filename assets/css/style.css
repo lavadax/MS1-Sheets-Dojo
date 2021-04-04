@@ -99,15 +99,14 @@ header {
 
 .main-content {
     margin-top: 100px;
+    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
 }
 
 .index-content {
-    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
     padding: calc((100vh - 540px)/2) 10%;
 }
 
 .contact-content {
-    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
     padding: calc((100vh - 720px)/2) 10%;
 }
 
@@ -240,13 +239,11 @@ footer p {
     }
 
     .index-content {
-    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
-    padding: calc((100vh - 700px)/2) 10%;
+        padding: calc((100vh - 700px)/2) 10%;
     }
 
     .contact-content {
-    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
-    padding: calc((100vh - 770px)/2) 10%;
+        padding: calc((100vh - 770px)/2) 10%;
     }
 
     .footer-row div p {
@@ -279,13 +276,11 @@ footer p {
     }
 
     .index-content {
-    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
-    padding: calc((100vh - 740px)/2) 10%;
+        padding: calc((100vh - 740px)/2) 10%;
     }
     
     .contact-content {
-    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
-    padding: calc((100vh - 850px)/2) 10%;
+        padding: calc((100vh - 850px)/2) 10%;
     }
 
     .footer-row div p {
@@ -312,13 +307,11 @@ footer p {
     }
 
     .index-content {
-    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
-    padding: calc((100vh - 830px)/2) 10%;
+        padding: calc((100vh - 830px)/2) 10%;
     }
 
     .contact-content {
-    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
-    padding: calc((100vh - 925px)/2) 10%;
+        padding: calc((100vh - 925px)/2) 10%;
     }
 
     .footer-row div p {
@@ -354,13 +347,11 @@ footer p {
     }
 
     .index-content {
-    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
-    padding: calc((100vh - 1000px)/2) 10%;
+        padding: calc((100vh - 1000px)/2) 10%;
     }
 
     .contact-content {
-    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
-    padding: calc((100vh - 1000px)/2) 10%;
+        padding: calc((100vh - 1000px)/2) 10%;
     }
 
     .footer-row div p {
