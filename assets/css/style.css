@@ -167,6 +167,11 @@ header {
     justify-content: space-evenly;
 }
 
+.buttons input {
+    border-radius: 4px;
+    font-weight: bold;
+}
+
 /* footer */
 
 footer {
