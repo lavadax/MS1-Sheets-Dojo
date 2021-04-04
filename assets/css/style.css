@@ -106,6 +106,10 @@ header {
     padding: calc((100vh - 540px)/2) 10%;
 }
 
+.guide-content {
+    padding: 20px 0;
+}
+
 .contact-content {
     padding: calc((100vh - 720px)/2) 10%;
 }
@@ -121,6 +125,7 @@ header {
 .text-block p:first-child, .text-block p:last-child {
     margin-bottom: 1rem;
 }
+
 /* contact form */
 
 .contact-form {
