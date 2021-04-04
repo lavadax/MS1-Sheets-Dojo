@@ -98,12 +98,20 @@ header {
 /* main body section */
 
 .main-content {
-    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
-    padding: calc((100vh - 560px)/2) 10%;
     margin-top: 100px;
 }
 
-.main-content p {
+.index-content {
+    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
+    padding: calc((100vh - 540px)/2) 10%;
+}
+
+.contact-content {
+    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
+    padding: calc((100vh - 700px)/2) 10%;
+}
+
+.main-content p, .main-content form {
     margin-bottom: 0.3rem;
 }
 
@@ -231,6 +239,11 @@ footer p {
         font-size: 15px;
     }
 
+    .contact-content {
+    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
+    padding: calc((100vh - 770px)/2) 10%;
+    }
+
     .footer-row div p {
         font-size: 15px;
     }
@@ -240,7 +253,7 @@ footer p {
     }
 }
 
-@media screen and (max-width: 697px) { /* copyright text takes up 2 lines at this point, causing padding to overflow */
+@media screen and (max-width: 697.8px) { /* copyright text takes up 2 lines at this point, causing padding to overflow */
     .copyright {
         padding-top: 10px;
     }
@@ -260,6 +273,11 @@ footer p {
         font-size: 14px;
     }
     
+    .contact-content {
+    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
+    padding: calc((100vh - 850px)/2) 10%;
+    }
+
     .footer-row div p {
         font-size: 14px;
     }
@@ -269,7 +287,7 @@ footer p {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 450.8px) {
     .nav-top li {
         width: 58px;
     }
@@ -283,6 +301,11 @@ footer p {
         margin-bottom: calc((100px - 37.5px)/2); /* 50% of header height - height of anchor */
     }
 
+    .contact-content {
+    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
+    padding: calc((100vh - 925px)/2) 10%;
+    }
+
     .footer-row div p {
         font-size: 10px;
     }
@@ -292,7 +315,7 @@ footer p {
     }
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 340.8px) {
     .nav-top {
         width: 150px;
     }
@@ -313,6 +336,11 @@ footer p {
 
     .nav-top li:last-child {
         margin-right: -18px;
+    }
+
+    .contact-content {
+    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
+    padding: calc((100vh - 1000px)/2) 10%;
     }
 
     .footer-row div p {
