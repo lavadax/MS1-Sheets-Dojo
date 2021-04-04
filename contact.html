@@ -29,39 +29,40 @@
     </header>
     <section class="main-content">
         <div class="text-block">
-            <p>Hi,</p>
+            <p>Hi</p>
             <p>Since you're on this page, chances are you have some feedback, or perhaps even a question regarding the guide.</p>
             <p>First I'd like to thank you for having gone through the guide and I hope it helped.</p>
             <p>In case you have any questions that deviate from the guide, I would advise you to first have a look around Google as it has helped me countless times.</p>
             <p>If you're still concerned about something, or have some suggestion or feedback regarding the guide or even the site, feel free to use the form below to contact me.</p>
          </div>
          <div class="contact-form">
-             <form action="https://formdump.codeinstitute.net/" method="post"> <!-- Using the course provided formdump link until a permanent solution has been created -->
+             <div class="form-header">
+                 <h3>Contact Me</h3>
+             </div>
+             <form> <!-- an action (URL) and a method (POST as this contains an email address which is PII) -->
                 <div class="container">
                     <div class="row">
-                        <h3>Contact form</h3>
-                    </div>
-                    <div class="row">
-                        <label for="email" class="col-3 contact-left">Email:</label>
-                        <input type="email" name="email" id="email" class="col" placeholder="Your email address here" required>
-                    </div>
-                    <div class="row">
-                        <label for="subject" class="col-3 contact-left">Subject:</label>
-                        <select name="subject" id="subject" required>
+                        <label for="email" class="col-12">Email:</label>
+                        <input type="email" name="email" id="email" class="col-12" placeholder="Your email address here" required>
+                        <label for="subject" class="col-12">Subject:</label>
+                        <select name="subject" id="subject" class="col-12" required>
+                            <option value="" disabled selected>Pick your subject</option> <!-- https://stackoverflow.com/questions/5805059/how-do-i-make-a-placeholder-for-a-select-box -->
                             <option value="question">Question about the guide</option>
                             <option value="guide-suggestion">Suggestion about the guide</option>
                             <option value="guide-feedback">Feedback about the guide</option>
                             <option value="site-feedback">Feedback about the site</option>
                             <option value="other">Other</option>
                         </select>
+                        <div id="other-hidden" class="col-12 row">
+                            <label for="other-subject" class="col-12">Other subject:</label>
+                            <input type="text" name="other-subject" id="other-subject" class="col-12">
+                        </div>
+                        <label for="message" class="col-12">Message:</label>
+                        <input type="textarea" id="message" class="col-12" placeholder="Your message here" required>
                     </div>
-                    <div class="row other-hidden">
-                        <label for="other-subject" class="col-3 contact-left">Other subject:</label>
-                        <input type="text" name="other-subject" id="other-subject" class="col">
-                    </div>
-                    <div class="row">
-                        <label for="message" class="col-3 contact-left">Message:</label>
-                        <input type="textarea" id="message" required>
+                    <div class="buttons">
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Clear">
                     </div>
                 </div>
              </form>
