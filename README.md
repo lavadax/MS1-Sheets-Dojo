@@ -115,7 +115,7 @@ All wireframes are in a single file and can be found [here](https://github.com/l
 
 ### Future Plans
 
-* Enhance index.html styling to look more professional.
+* [Enhance index.html styling to look more professional.](https://github.com/lavadax/MS1-Sheets-Dojo/issues/7)
 * Add guide to guide.html.
 * Finish contact form in contact.html.
 
