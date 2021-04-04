@@ -239,6 +239,11 @@ footer p {
         font-size: 15px;
     }
 
+    .index-content {
+    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
+    padding: calc((100vh - 700px)/2) 10%;
+    }
+
     .contact-content {
     min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
     padding: calc((100vh - 770px)/2) 10%;
@@ -272,6 +277,11 @@ footer p {
         margin-bottom: calc((100px - 48.75px)/2); /* 50% of header height - height of anchor */
         font-size: 14px;
     }
+
+    .index-content {
+    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
+    padding: calc((100vh - 740px)/2) 10%;
+    }
     
     .contact-content {
     min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
@@ -299,6 +309,11 @@ footer p {
         padding: 10px 0;
         margin-top: calc((100px - 37.5px)/2); /* 50% of header height - height of anchor */
         margin-bottom: calc((100px - 37.5px)/2); /* 50% of header height - height of anchor */
+    }
+
+    .index-content {
+    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
+    padding: calc((100vh - 830px)/2) 10%;
     }
 
     .contact-content {
@@ -336,6 +351,11 @@ footer p {
 
     .nav-top li:last-child {
         margin-right: -18px;
+    }
+
+    .index-content {
+    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
+    padding: calc((100vh - 1000px)/2) 10%;
     }
 
     .contact-content {
