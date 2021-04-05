@@ -168,4 +168,6 @@ Project Link: [https://github.com/lavadax/MS1-Sheets-Dojo](https://github.com/la
 ## Acknowledgements
 
 * [https://github.com/othneildrew](https://github.com/othneildrew/Best-README-Template) for providing the readme template.
-* [https://www.w3schools.com/](w3schools) for a refresher on a lot of styling rules, including but not limited to: vertical and horizontal centering of text, usage of last-child css selector in nav bar, active status of nav element, etc.
+* [w3schools](https://www.w3schools.com/) for a refresher on a lot of styling rules, including but not limited to: vertical and horizontal centering of text, usage of last-child css selector in nav bar, active status of nav element, etc.
+* [css-tricks.com](https://css-tricks.com/) To help with some more specific css issues I encountered.
+* [benlcollins.com](https://www.benlcollins.com/spreadsheets/how-to-use-google-sheets/) for the basis of the guide content.
