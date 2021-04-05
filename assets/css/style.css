@@ -107,11 +107,18 @@ header {
 }
 
 .guide-content {
-    padding: 20px 0;
+    padding: 20px 10%;
+}
+.guide-content .guide p {
+  text-align: left;
 }
 
 .contact-content {
     padding: calc((100vh - 720px)/2) 10%;
+}
+
+.main-content p {
+  font-size: 1.2rem;
 }
 
 .main-content p, .main-content form {
@@ -119,7 +126,7 @@ header {
 }
 
 .main-content h1 {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .main-content p, .main-content h1, .main-content h3 {
@@ -131,12 +138,23 @@ header {
 }
 
 .toc {
-  width: 280px;
+  max-width: 280px;
+  width: 80vw;
   padding-left: 10px;
-  margin-left: 30px;
   border: 3px solid #CF1717;
   background-color: #CCC;
   border-radius: 4px;
+}
+
+.guide img {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 10px;
+  border: 1px solid #CCC;
+}
+
+.return {
+  font-size: 10px;
 }
 
 /* contact form */
@@ -375,6 +393,15 @@ footer p {
 
     .contact-content {
         padding: calc((100vh - 1000px)/2) 10%;
+    }
+
+    .toc h2 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .mobile-hidden {
+      display: none;
     }
 
     .footer-row div p {
