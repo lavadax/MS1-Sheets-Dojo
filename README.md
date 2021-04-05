@@ -75,6 +75,7 @@
 * [FontAwesome](https://fontawesome.com/) - Used to add icons for social media links.
 * [GitHub](https://github.com) - Used to host the project during and after development.
 * [Balsamiq](https://balsamiq.com/) - Used to set up the wireframes at the start of the dev cycle.
+* [Atom](https://atom.io/) - Used as an alternative to Gitpod to develop the site and push the project to Github after running out of free time on Gitpod.
 
 
 
@@ -125,6 +126,7 @@ See the [open issues](https://github.com/lavadax/MS1-Sheets-Dojo/issues) for a l
 
 ### Past issues
 
+* I ran out of time on Gitpod using my free account, so I had to swap from Gitpod to Atom near the end of the project.
 * Had to use vh for top/bottom padding in the contact form, as using % is seemingly based on width of the element, instead of height.
 * [Positioning of nav in header caused the nav to overflow from the header, creating whitespace on the right at screen widths below 340px.](https://github.com/lavadax/MS1-Sheets-Dojo/issues/3)  
 * [Width rules for all footer sections conflicted with the built-in bootstrap breakpoints, causing the center section to get pushed down on the screen.](https://github.com/lavadax/MS1-Sheets-Dojo/issues/5)  
