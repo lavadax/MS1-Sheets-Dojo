@@ -35,7 +35,7 @@
             <ol>
                 <li><a href="#getting-started">Getting Started</a></li>
                 <li><a href="#beginner">Beginner</a></li>
-                <li><a href="#">Intermediate</a></li>
+                <li><a href="#intermediate">Intermediate</a></li>
                 <li><a href="#">Advanced</a></li>
             </ol>
         </div>
@@ -72,6 +72,16 @@
             <img src="assets/images/sum.png">
             <p>Another interesting thing we could find with the data we have collected, is how much members pay on average. start typing =AVERAGE(D4:D8) in D9 and we'll find out the answer.</p>
             <img src="assets/images/average.png">
+            <p>This brings us to the end of the mathematical functions for beginners. As a bonus I will point out 1 last function that I find very useful in my current role: CONCATENATE().</p>
+            <p>Concatenate is used to combine 2 cell texts together without manually adding everything together. Using the example of our gym membership table, it's common to sign up for a gym by filling out our first and last name separately.</p>
+            <p>While our example had both in column A, the more realistic example would look like this:</p>
+            <img src="assets/images/namesplit.png">
+            <p>I've already added an empty column for a full name to show the use of concatenate. To get the full name in C14, we simply type =CONCATENATE(A14," ",B14) to get the result we want.</p>
+            <img src="assets/images/namejoin.png">
+            <p>Note that we added both name cells, separated by commas, and " " in the middle, to add an extra space between the first and last name. If we want to get the full name for the other members, instead of typing the function into every cell in column C, we can simply copy the function we already typed, and paste it in the other cells. Google Sheets will automatically adjust the cell references to match where we pasted the function.</p>
+            <img src="assets/images/funcpaste.png">
+            <h3 id="intermediate">Intermediate</h3>
+            <p>Now that we've finished discussing concatenate, we're done with the beginner stages and it's time for us to progress into the intermediate section.</p>
         </div>
     </section>
     <footer>
