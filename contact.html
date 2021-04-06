@@ -39,7 +39,7 @@
              <div class="form-header">
                  <h3>Contact Me</h3>
              </div>
-             <form> <!-- an action (URL) and a method (POST as this contains an email address which is PII) -->
+             <form id="contactform"> <!-- an action (URL) and a method (POST as this contains an email address which is PII) -->
                 <div class="container">
                     <div class="row">
                         <label for="email" class="col-12">Email:</label>
@@ -53,7 +53,7 @@
                             <option value="site-feedback">Feedback about the site</option>
                         </select>
                         <label for="message" class="col-12">Message:</label>
-                        <input type="textarea" id="message" class="col-12" placeholder="Your message here" required>
+                        <textarea id="message" class="col-12" form="contactform" required>Your message here</textarea>
                     </div>
                     <div class="buttons">
                         <input type="submit" value="Send">
@@ -61,7 +61,7 @@
                     </div>
                 </div>
              </form>
-         </div> 
+         </div>
     </section>
     <footer>
         <div class="container">
