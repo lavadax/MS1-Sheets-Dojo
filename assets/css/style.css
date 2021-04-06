@@ -83,7 +83,7 @@ header {
     transition: all 0.2s ease-in-out;
 }
 
-.nav-top li a:hover {
+.nav-top li a:hover, .return:hover {
     color:#000;
     background-color:#fff;
     border-color:#CF1717;
@@ -110,7 +110,7 @@ header {
     padding: 20px 10%;
 }
 .guide-content .guide p {
-  text-align: left;
+    text-align: left;
 }
 
 .contact-content {
@@ -118,7 +118,7 @@ header {
 }
 
 .main-content p {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .main-content p, .main-content form {
@@ -138,23 +138,41 @@ header {
 }
 
 .toc {
-  max-width: 280px;
-  width: 80vw;
-  padding-left: 10px;
-  border: 3px solid #CF1717;
-  background-color: #CCC;
-  border-radius: 4px;
+    max-width: 280px;
+    width: 80vw;
+    padding-left: 10px;
+    border: 3px solid #CF1717;
+    background-color: #CCC;
+    border-radius: 4px;
+}
+
+.guide h4, .guide h3 {
+    margin: 20px 0;
+    font-weight: bold;
 }
 
 .guide img {
-  width: 100%;
-  max-width: 800px;
-  margin-top: 10px;
-  border: 1px solid #CCC;
+    width: 100%;
+    max-width: 500px;
+    margin: 30px 0;
+    border: 1px solid #CCC;
+}
+
+.guide a:hover {
+  text-decoration: none;
 }
 
 .return {
-  font-size: 10px;
+    font-size: 12px;
+    position: fixed;
+    right: 20px;
+    bottom: 90px;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    border:2px solid #CF1717;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
 }
 
 /* contact form */
@@ -188,11 +206,11 @@ header {
     padding: 0;
 }
 
-.contact-form label, .contact-form input, .contact-form select {
+.contact-form label, .contact-form input, .contact-form select, .contact-form textarea{
     margin: 2px 5%;
 }
 
-.contact-form input, .contact-form select {
+.contact-form input, .contact-form select, .contact-form textarea{
     max-width: 90%;
     min-height: 30px;
 }
@@ -396,12 +414,8 @@ footer p {
     }
 
     .toc h2 {
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .mobile-hidden {
-      display: none;
+        font-size: 18px;
+        font-weight: bold;
     }
 
     .footer-row div p {
