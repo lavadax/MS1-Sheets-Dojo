@@ -75,6 +75,7 @@ header {
     text-align: center;
     text-decoration: none;
     color:#fff;
+    background-color: #000;
     border: 2px solid #CF1717;
     padding: 15px 0;
     margin-top: calc((100% - 60px)/2); /* 50% of header height - height of anchor */
@@ -93,6 +94,17 @@ header {
     color: #000;
     background-color: #CF1717;
     border-color: #fff;
+}
+
+.dropdown-menu {
+  min-width: 140px;
+  background-color: #000;
+  padding: 0;
+}
+
+.dropdown-menu .dropdown-item {
+  min-width: 90%;
+  margin: 5px auto;
 }
 
 /* main body section */
