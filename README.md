@@ -163,8 +163,7 @@ The biggest concern for this finding were pc monitors used in portrait mode, how
 * The second part of accessibility testing was done through the [WAVE web accessibility evaluation tool](https://wave.webaim.org/).
 This pointed out that my social media links didn't contain any text or had any screen reader labels attached to them, so this was promtpy fixed.
 It also pointed out there was not enough contrast between some of the elements, so that was increased to assist the visually impaired users.
-
-
+*Lastly once the generic issues had been fixed, I tested the site on various browsers to make sure the code was processed correctly: [Google Chrome](https://www.google.com/intl/en_ie/chrome/), [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/), [Microsoft Edge](https://www.microsoft.com/en-us/edge), and [Brave](https://brave.com/).
 
 <!-- CONTRIBUTING -->
 ## Contributing
