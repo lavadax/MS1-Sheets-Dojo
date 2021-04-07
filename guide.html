@@ -45,14 +45,29 @@
             <h2>Table of Contents</h2>
             <ol>
                 <li><a href="#getting-started">Getting Started</a></li>
-                <li><a href="#beginner">Beginner</a></li>
-                <li><a href="#intermediate">Intermediate</a></li>
+                <ul>
+                    <li><a href="#what-is">What is Google Sheets</a></li>
+                </ul>
+                <li><a href="#beginner">Beginner</a>
+                  <ul>
+                      <li><a href="#formulas">Formulas</a></li>
+                      <li><a href="#basic-functions">Basic Functions</a></li>
+                  </ul>
+                </li>
+                <li><a href="#intermediate">Intermediate</a>
+                  <ul>
+                      <li><a href="#cell-references">Cell References</a></li>
+                      <li><a href="#multiple-tabs">Using Multiple Tabs</a></li>
+                      <li><a href="#collaborating">Collaborating</a></li>
+                      <li><a href="#advanced-functions">Advanced Functions</a></li>
+                  </ul>
+                </li>
             </ol>
         </div>
         <div class="guide">
             <a href="#toc" class="return">Return to top <i class="fas fa-arrow-up"></i></a>
             <h3 id="getting-started">Getting Started<h3>
-            <h4>What is Google Sheets and why should I use it?</h4>
+            <h4 id="what-is">What is Google Sheets and why should I use it?</h4>
             <p>Google Sheets is a free, cloud-based spreadsheet application. If that doesn't say much for you, think Microsoft Excel with some changes.</p>
             <p>The strongest point of Google Sheets, is the fact that it's cloud based, which means your files will always be updated no matter where you are, and collaborating with people is much easier.</p>
             <p>The first thing we have to do before we can get started, is opening <a href="https://docs.google.com/spreadsheets" target="_blank">Google Sheets</a> and creating a new spreadsheet. To get started on a blank sheet, click on the big '+' in the top left as indicated in the image below.</p>
@@ -62,11 +77,11 @@
             <p>The last thing before we start working: expect to make mistakes. No need to worry, simply press CTRL + Z (or CMD + Z on Mac) and you'll revert back one step.</p>
             <h3 id="beginner">Beginner</h3>
             <p>I think we can all imagine (to some extent) what a spreadsheet is used for: data tables. I'll be skipping over what they look like as this guide will be mostly focused on functions and formulas, but if you're interested in this just contact me <a href="contact.html">here</a> and I can add it later.</p>
-            <h4>Formulas</h4>
+            <h4 id="formulas">Formulas</h4>
             <p>In order to start using a formula, you have to first put an equal sign (=) in the cell before adding your formula. This is pretty much the same as using a calculator, so make sure to keep the priority rules (PEMDAS / BEDMAS / BODMAS / BIDMAS) in mind before throwing random numbers in your spreadsheet.</p>
             <p>For example, if you type "=10/2" in a cell, it will show 5. you can see the formula in the formula bar on top, while the result is in the cell as you can see below.</p>
             <img src="assets/images/formula.png" alt="Simple division formula">
-            <h4>Basic Functions</h4>
+            <h4 id="basic-functions">Basic Functions</h4>
             <p>There are many functions in Google Sheets, but we have to start somewhere. In this section we'll be discussing COUNT, SUM and AVERAGE.</p>
             <p>Click on cell B8, type an equals (=) and then start typing the word COUNT. You’ll notice an auto-complete menu comes up showing all of the functions beginning with C, like this:</p>
             <img src="assets/images/count.png" alt="Entering the count function">
@@ -92,7 +107,7 @@
             <img src="assets/images/funcpaste.png" alt="Showcase of concatenate result with full table">
             <h3 id="intermediate">Intermediate</h3>
             <p>Now that we've finished discussing concatenate, we're done with the beginner stages and it's time for us to progress into the intermediate section.</p>
-            <h4>Cell References</h4>
+            <h4 id="cell-references">Cell References</h4>
             <p>An important thing to discuss are the cell references we've mentioned earlier, and how you can use them efficiently.</p>
             <p>Remember when we used concatenate, we were able to copy the function from C14 to C15, C16 and C17 and the correct names showed up? That was because we used relative references. This means that the function will adjust based on where you put it.</p>
             <p>If we need to use the exact same cell for multiple functions, it's helpful to use absolute references. For example: if you look at the URL for Google Sheets, Google Docs, and Google Slides, you'll notice they all start with https://docs.google.com/ followed by the word that identifies the specific application.</p>
@@ -100,7 +115,7 @@
             <img src="assets/images/absolute.png" alt="multiple links using absolute reference">
             <p>In the formula bar you can see I refer to cell A2 by typing $A$2 while B4 is simply B4. B4 is a relative reference that will change when copy/pasting, while A2 will stay the same no matter where we paste the function.</p>
             <p>The $ "locks" both the column and row in place so to speak, making this example possible without a lot of manual typing.</p>
-            <h4>Working in multiple tabs</h4>
+            <h4 id="multiple-tabs">Using multiple tabs</h4>
             <p>When working with data, quite often do we use a tab to keep all of our raw data, while using another tab to sort through it and apply functions to it. If we're trying to refer to a cell in a different tab, instead of simply typing "=A2", we have to first type the name of the tab, followed by an exclamation mark, and then the cell we want.</p>
             <p>If we take the previous example of the cell references and add a new tab, we now have a tab named "Sheet1" that contains the following data:</p>
             <img src="assets/images/sheet1.png" alt="Sheet 1 with links">
@@ -110,14 +125,14 @@
             <img src="assets/images/sheet2.png" alt="Sheet 2 with link">
             <p>One last thing to note on this subject is this: If you rename your tabs (double click on the tab name or right click > rename) and the new name contains a space, any reference will require you to put the tab name in single quotes for the functions to work.</p>
             <p>Congrats on making it this far, you now know how to get started in Google Sheets on your own. But wait, at the start of the guide I mentioned the strongest point of Google sheets was that it was cloud based, making collabs much easier so lets discuss that topic a bit further.</p>
-            <h4>Collaborating</h4>
+            <h4 id="collaborating">Collaborating</h4>
             <p>The first step of collaborating with others on a sheet is sharing it with them. In order to do so, click on the share button in the top right and select the sharing settings that work best for you.</p>
             <img src="assets/images/sharing1.png" alt="Google Sheets sharing settings">
             <p>By default your sharing settings will be set to "Restricted", preventing others of accessing your files unless you explicitly allow them access. In the top part (1) you can add collaborators using their email address. If you'd rather not add individual collaborators, you always have the option of changing the settings in the bottom half (2).</p>
             <img src="assets/images/sharing2.png" alt="Google Sheets additional sharing settings">
             <p>After opening the additional sharing settings, you can change the sheet from "restricted" to "anyone with the link" (1). This will allow access to anyone that manages to get their hands on the link to your sheet. While this is less work for you, this also means it's not a good idea to do this with more sensitive information, as it can be leaked by any of the collaborators.</p>
             <p>If you do decide to allow access to anyone with the link, you have to change the access rights (2) from "viewer" to "editor" if you want them to not only see the data, but also add to it themselves.</p>
-            <h4>More Advanced Functions</h4>
+            <h4 id="advanced-functions">Advanced Functions</h4>
             <p>Next we should talk about the VLOOKUP function. This is mostly used to merge together data from 2 tables that have at least 1 column in common. Here is the syntax for VLOOKUP: =VLOOKUP(search_key, range, index, [is_sorted]).</p>
             <p>As a rule of thumb, is_sorted should be FALSE. Not using FALSE will more often than not result in an error in the fuction, and in the rare case that you shouldn't be using FALSE, you should have more than enough knowledge of the function that I would question why you're checking out this guide.</p>
             <p>To explain the other attributes, search_key is the term or number that you're looking for, range is the table that you're looking in, and index is the number of the column for the term you want to find. I know this is all a bit much to take in at first, so here you can see an example:</p>
