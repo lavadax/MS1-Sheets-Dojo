@@ -65,7 +65,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![Home screenshot](documentation/finished-home.png)
+![Contact screenshot](documentation/finished-contact.png)
+![Guide screenshot](documentation/finished-guide.png)
 
 
 ### Built With
