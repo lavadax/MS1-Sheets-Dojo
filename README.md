@@ -66,7 +66,9 @@
 ## About The Project
 
 ![Home screenshot](documentation/finished-home.png)  
+-----------------------------------------------------------------------------------------
 ![Contact screenshot](documentation/finished-contact.png)  
+-----------------------------------------------------------------------------------------
 ![Guide screenshot](documentation/finished-guide.png)
 
 
