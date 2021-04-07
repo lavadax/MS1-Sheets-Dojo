@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guide to Google sheets from beginner to expert.">
+    <meta name="keywords" content="Google Sheets,Sheets,spreadsheets,guide,data,function,functions,formulas,query">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
     <script src="https://kit.fontawesome.com/4b07045a13.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title>Sheets Dojo Contact</title>
 </head>
 <body>
@@ -20,28 +25,68 @@
                 <div class="col-8 col-sm-6 nav-top-container">
                     <ul class="nav-top">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="guide.html">Course</a></li>
+                        <li>
+                            <div class="dropdown show">
+                                <a class="btn dropdown-toggle" href="guide.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Course</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="guide.html">Getting Started</a> <!-- redirecting to top of page to make sure the ToC is visible on first visit -->
+                                    <a class="dropdown-item" href="guide.html#beginner">Beginner</a>
+                                    <a class="dropdown-item" href="guide.html#intermediate">Intermediate</a>
+                                </div>
+                            </div>
+                        </li>
                         <li><a href="contact.html" class="active">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
-    <section class="main-content">
-        <p>
-            Short contact form.
-        </p> 
+    <section class="main-content contact-content">
+        <div class="text-block">
+            <p>Hi</p>
+            <p>Since you're on this page, chances are you have some feedback, or perhaps even a question regarding the guide.</p>
+            <p>First I'd like to thank you for having gone through the guide and I hope it helped.</p>
+            <p>In case you have any questions that deviate from the guide, I would advise you to first have a look around Google as it has helped me countless times.</p>
+            <p>If you're still concerned about something, or have some suggestion or feedback regarding the guide or even the site, feel free to use the form below to contact me.</p>
+         </div>
+         <div class="contact-form">
+             <div class="form-header">
+                 <h3>Contact Me</h3>
+             </div>
+             <form id="contactform"> <!-- an action (URL) and a method (POST as this contains an email address which is PII) -->
+                <div class="container">
+                    <div class="row">
+                        <label for="email" class="col-12">Email:</label>
+                        <input type="email" name="email" id="email" class="col-12" placeholder="Your email address here" required>
+                        <label for="subject" class="col-12">Subject:</label>
+                        <select name="subject" id="subject" class="col-12" required>
+                            <option value="" disabled selected>Pick your subject</option> <!-- https://stackoverflow.com/questions/5805059/how-do-i-make-a-placeholder-for-a-select-box -->
+                            <option value="question">Question about the guide</option>
+                            <option value="guide-suggestion">Suggestion about the guide</option>
+                            <option value="guide-feedback">Feedback about the guide</option>
+                            <option value="site-feedback">Feedback about the site</option>
+                        </select>
+                        <label for="message" class="col-12">Message:</label>
+                        <textarea id="message" class="col-12" form="contactform" required>Your message here</textarea>
+                    </div>
+                    <div class="buttons">
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Clear">
+                    </div>
+                </div>
+             </form>
+         </div>
     </section>
     <footer>
         <div class="container">
             <div class="row footer-row d-flex">
-                <div class="col-3 align-self-left">
+                <div class="col-3 align-self-left copyright">
                     <p>© 2021 Lavadax</p>
                 </div>
-                <div class="col footer-contact align-self-center">
+                <div class="col footer-contact">
                     <p>Any questions or something not working right? contact me <a href="contact.html">here</a></p>
                 </div>
-                <div class="col-3 socials align-self-right">
+                <div class="col-4 col-sm-3 socials align-self-right">
                     <a href="https://www.facebook.com/Lavadax" target="_blank"><i class="fab fa-facebook-square"></i></a>
                     <a href="https://twitter.com/LavadaxTwitch" target="_blank"><i class="fab fa-twitter-square"></i></a>
                     <a href="https://www.twitch.tv/lavadax" target="_blank"><i class="fab fa-twitch"></i></a>

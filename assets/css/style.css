@@ -27,9 +27,9 @@ header {
 /* logo */
 
 #logo-container {
-    position:absolute; 
+    position:absolute;
     left: 10px;
-    top:0; 
+    top:0;
     padding:0;
     margin:0;
 }
@@ -68,6 +68,10 @@ header {
     bottom:0;
 }
 
+.dropdown a {
+  font-weight: bold;
+}
+
 .nav-top li a {
     display: block;
     width:80px;
@@ -75,6 +79,7 @@ header {
     text-align: center;
     text-decoration: none;
     color:#fff;
+    background-color: #000;
     border: 2px solid #CF1717;
     padding: 15px 0;
     margin-top: calc((100% - 60px)/2); /* 50% of header height - height of anchor */
@@ -83,7 +88,7 @@ header {
     transition: all 0.2s ease-in-out;
 }
 
-.nav-top li a:hover {
+.nav-top li a:hover, .return:hover {
     color:#000;
     background-color:#fff;
     border-color:#CF1717;
@@ -95,18 +100,152 @@ header {
     border-color: #fff;
 }
 
+.dropdown-menu {
+  min-width: 140px;
+  background-color: #000;
+  padding: 0;
+  border-radius: 7px;
+}
+
+.dropdown-menu .dropdown-item {
+  min-width: 90%;
+  margin: 5px auto;
+}
+
 /* main body section */
 
 .main-content {
-    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
-    padding: 30px 10%;
     margin-top: 100px;
+    min-height: calc(100vh - 185px); /* 185px = sum of header and footer height */
+}
+
+.index-content {
+    padding: calc((100vh - 540px)/2) 10%;
+}
+
+.guide-content {
+    padding: 20px 10%;
+}
+.guide-content .guide p {
+    text-align: left;
+}
+
+.contact-content {
+    padding: calc((100vh - 720px)/2) 10%;
+}
+
+.main-content p {
+    font-size: 1.2rem;
+}
+
+.main-content p, .main-content form {
+    margin-bottom: 0.3rem;
+}
+
+.main-content h1 {
+    font-weight: bold;
+}
+
+.main-content p, .main-content h1, .main-content h3 {
+    text-align: center;
+}
+
+.text-block p:first-child, .text-block p:last-child {
+    margin-bottom: 1rem;
+}
+
+.toc {
+    max-width: 280px;
+    width: 80vw;
+    padding-left: 10px;
+    border: 3px solid #CF1717;
+    background-color: #CCC;
+    border-radius: 4px;
+}
+
+.guide h4, .guide h3 {
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.guide img {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px 0;
+    border: 1px solid #CCC;
+}
+
+.guide a:hover {
+  text-decoration: none;
+}
+
+.return {
+    font-size: 12px;
+    position: fixed;
+    right: 20px;
+    bottom: 90px;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    border:2px solid #CF1717;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* contact form */
+
+.contact-form {
+    width: 100%;
+}
+
+.form-header {
+    text-align: center;
+}
+
+.contact-form form {
+    width: 100%;
+    max-width: 700px;
+    background-color: #000;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid #CF1717;
+    border-radius: 6px;
+}
+
+.contact-form .container {
+    max-width: 100%;
+    padding: 3vh 0;
+    margin: 0;
+}
+
+.contact-form label {
+    padding: 0;
+}
+
+.contact-form label, .contact-form input, .contact-form select, .contact-form textarea{
+    margin: 2px 5%;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea{
+    max-width: 90%;
+    min-height: 30px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons input {
+    border-radius: 4px;
+    font-weight: bold;
 }
 
 /* footer */
 
 footer {
-    
     padding: 0;
     margin: 0;
     height: 85px;
@@ -175,6 +314,18 @@ footer p {
         font-size: 15px;
     }
 
+    .dropdown-menu .dropdown-item {
+      font-size: 15px;
+    }
+
+    .index-content {
+        padding: calc((100vh - 700px)/2) 10%;
+    }
+
+    .contact-content {
+        padding: calc((100vh - 770px)/2) 10%;
+    }
+
     .footer-row div p {
         font-size: 15px;
     }
@@ -184,7 +335,7 @@ footer p {
     }
 }
 
-@media screen and (max-width: 697px) { /* copyright text takes up 2 lines at this point, causing padding to overflow */
+@media screen and (max-width: 697.8px) { /* copyright text takes up 2 lines at this point, causing padding to overflow */
     .copyright {
         padding-top: 10px;
     }
@@ -203,7 +354,23 @@ footer p {
         margin-bottom: calc((100px - 48.75px)/2); /* 50% of header height - height of anchor */
         font-size: 14px;
     }
-    
+
+    .dropdown-menu {
+      min-width: 130px;
+    }
+
+    .dropdown-menu .dropdown-item {
+      font-size: 14px;
+    }
+
+    .index-content {
+        padding: calc((100vh - 740px)/2) 10%;
+    }
+
+    .contact-content {
+        padding: calc((100vh - 850px)/2) 10%;
+    }
+
     .footer-row div p {
         font-size: 14px;
     }
@@ -213,7 +380,7 @@ footer p {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 450.8px) {
     .nav-top li {
         width: 58px;
     }
@@ -227,6 +394,22 @@ footer p {
         margin-bottom: calc((100px - 37.5px)/2); /* 50% of header height - height of anchor */
     }
 
+    .dropdown-menu {
+      min-width: 100px;
+    }
+
+    .dropdown-menu .dropdown-item {
+      font-size: 10px;
+    }
+
+    .index-content {
+        padding: calc((100vh - 830px)/2) 10%;
+    }
+
+    .contact-content {
+        padding: calc((100vh - 925px)/2) 10%;
+    }
+
     .footer-row div p {
         font-size: 10px;
     }
@@ -236,11 +419,11 @@ footer p {
     }
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 340.8px) {
     .nav-top {
         width: 150px;
     }
-    
+
     .nav-top li {
         width: 48px;
     }
@@ -255,8 +438,29 @@ footer p {
 
     }
 
+    .dropdown-menu {
+      min-width: 90px;
+    }
+
+    .dropdown-menu .dropdown-item {
+      font-size: 9px;
+    }
+
     .nav-top li:last-child {
         margin-right: -18px;
+    }
+
+    .index-content {
+        padding: calc((100vh - 1000px)/2) 10%;
+    }
+
+    .contact-content {
+        padding: calc((100vh - 1000px)/2) 10%;
+    }
+
+    .toc h2 {
+        font-size: 18px;
+        font-weight: bold;
     }
 
     .footer-row div p {
