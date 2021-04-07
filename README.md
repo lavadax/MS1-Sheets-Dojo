@@ -162,7 +162,7 @@ Distributed under the MIT License. See [`LICENSE`](https://github.com/lavadax/MS
 <!-- CONTACT -->
 ## Contact
 
-Lavadax - [Twitter](https://twitter.com/LavadaxTwitch) - [facebook](https://www.facebook.com/Lavadax) - lavadax.twitch@hotmail.com
+Lavadax - [Twitter](https://twitter.com/LavadaxTwitch) - [facebook](https://www.facebook.com/Lavadax)
 
 Project Link: [https://github.com/lavadax/MS1-Sheets-Dojo](https://github.com/lavadax/MS1-Sheets-Dojo)
 
