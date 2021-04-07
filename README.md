@@ -65,8 +65,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Home screenshot](documentation/finished-home.png)
-![Contact screenshot](documentation/finished-contact.png)
+![Home screenshot](documentation/finished-home.png)  
+![Contact screenshot](documentation/finished-contact.png)  
 ![Guide screenshot](documentation/finished-guide.png)
 
 
@@ -118,9 +118,8 @@ All wireframes are in a single file and can be found [here](https://github.com/l
 
 ### Future Plans
 
-* [Enhance index.html styling to look more professional.](https://github.com/lavadax/MS1-Sheets-Dojo/issues/7)
-* Add guide to guide.html.
-* Add input field for other subjects, hidden by default, unhidden when "other" subject is selected.
+* [Add input field for other subjects, hidden by default, unhidden when "other" subject is selected.](https://github.com/lavadax/MS1-Sheets-Dojo/issues/8)
+* [Make the main content of all pages more responsive](https://github.com/lavadax/MS1-Sheets-Dojo/issues/9)
 
 ### Open Issues
 
