@@ -53,6 +53,13 @@
                 <li><a href="#past-issues">Past issues</a></li>
             </ul>
         </li>
+        <li>
+            <a href="#testing">Testing</a>
+            <ul>
+                <li><a href="#functional-testing">Functional Testing</a></li>
+                <li><a href="#accessibility-testing">Accessibility Testing</a></li>
+            </ul>
+        </li>
         <li><a href="#contributing">Contributing</a></li>
         <li><a href="#license">License</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -138,6 +145,26 @@ See the [open issues](https://github.com/lavadax/MS1-Sheets-Dojo/issues) for a l
 * Top nav bar spacing would overlap on extra small screen sizes, requiring a modified spacing solution by form of media query to ensure proper functionality down to screen widths of 280px.  
 * Adding "/" in readme headers stopped table of contents from redirecting correctly. Had to remove all symbols to ensure functionality.  
 * Project started on different repository, but after several days of testing, making edits to the master branch directly proved to be too risky. New repository was created as a safety precaution.  
+
+<!-- TESTING -->
+## Testing
+
+### Functional Testing
+
+* The first part of testing was done by putting the code through the [Jigsaw validator for CSS](https://jigsaw.w3.org/css-validator/validator) and the [W3 validator for HTML](https://validator.w3.org/nu/).
+* Next I accessed every link on the site from every possible starting point to make sure all anchors were set up correctly.
+
+### Accessibility Testing
+
+* Accessibility was first tested for responsiveness by running my code through a [multi screen test](http://whatismyscreenresolution.net/multi-screen-test).  
+This made it clear that screens below 300px in width caused issues, but a fix was foregone due to the odds of a device with this width accessing the site.  
+The other thing that stood out, was the responsive padding increasing on screens with ratios that fell outside of the expected range when considering phones, tablets, laptops, pc monitors and TVs.
+The biggest concern for this finding were pc monitors used in portrait mode, however since this just added some unneccesary whitespace, this was not deemed a priority issue.
+* The second part of accessibility testing was done through the [WAVE web accessibility evaluation tool](https://wave.webaim.org/).
+This pointed out that my social media links didn't contain any text or had any screen reader labels attached to them, so this was promtpy fixed.
+It also pointed out there was not enough contrast between some of the elements, so that was increased to assist the visually impaired users.
+
+
 
 <!-- CONTRIBUTING -->
 ## Contributing
